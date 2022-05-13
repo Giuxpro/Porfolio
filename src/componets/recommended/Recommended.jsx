@@ -1,9 +1,9 @@
 import React from 'react'
-import styles from "./Recommended.module.css"
+import "./Recommended.css"
 
 const Recommended = () => {
   return (
-    <div>Recommended</div>
+    <section id='recommended'>Recommended</section>
   )
 }
 
