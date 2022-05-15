@@ -54,7 +54,7 @@ const Contact = () => {
           <article className='contact__option'>
             <ImWhatsapp/>
             <h4>WhatsApp</h4>
-            <h5></h5>
+            <h5>Let's Talk</h5>
             <a href={`https://api.whatsapp.com/send?phone=922276249`} target="_blank">Send a Message</a>
           </article>
         </div>

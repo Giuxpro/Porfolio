@@ -1,10 +1,7 @@
 import React from 'react'
 import "./Recommended.css"
-import AVTR1 from "../../assets/avatar1.jpg"
-import AVTR2 from "../../assets/avatar2.jpg"
-import AVTR3 from "../../assets/avatar3.jpg"
-import AVTR4 from "../../assets/avatar4.jpg"
-import review from "../../json/review.json"
+
+import review from "./review.json"
 
 // import Swiper core and required modules
 import { Pagination} from 'swiper';
@@ -34,7 +31,7 @@ const Recommended = () => {
             return(
             <SwiperSlide key={index} className='testimonial'>
               <div className='client__avatar'>
-                <img src={avatar} alt="avatar one" />     
+                <img src={require(`../../assets/${avatar}`)} alt="avatar one" />     
               </div>
               <h5 className='client__name'>{name}</h5>
               <small className='client__review'>{review}</small>

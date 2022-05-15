@@ -1,14 +1,10 @@
 import React from "react";
 import "./Portfolio.css";
-// import IMG1 from "../../assets/web1.png";
-// import IMG2 from "../../assets/web2.png";
-// import IMG3 from "../../assets/portfolio3.jpg";
-// import IMG4 from "../../assets/portfolio4.jpg";
-// import IMG5 from "../../assets/portfolio6.jpg";
-// import data from "../../json/data.json";
-import data from "./data_Info.json";
+
+ import data from "./data_Info.json";
 
 const Portfolio = () => {
+  
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
@@ -19,7 +15,7 @@ const Portfolio = () => {
           return (
             <article key={id} className="portfolio__item">
               <div className="portfolio__item-image">
-                <img className="portfolio__img" src={image} alt="GameWeb" />
+                <img className="portfolio__img" src={require(`../../assets/${image}`)} alt="GameWeb" />
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
