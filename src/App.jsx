@@ -21,10 +21,7 @@ function App() {
       <Recommended/>
       <Contact/>
       <Footer/>
-     
-
- 
-
+   
     </>
   )
 }
