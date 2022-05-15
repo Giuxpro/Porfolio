@@ -23,6 +23,10 @@
 .about__me-image:hover{
     transform: rotate(0);
 }
+.about__me-image img{
+    height: 25rem;
+    
+}
 
 .about__cards{
     display: grid;
