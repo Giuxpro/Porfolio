@@ -17,10 +17,10 @@
     },
     {
         "id": 4,
-        "image": "m.jpg",
-        "title": "Comming Soon",
-        "github": "Available Soon",
-        "demo": "Available Soon"
+        "image": "ColorGame.png",
+        "title": "ColorGame",
+        "github": "https://github.com/Giuxpro/p5-intro/tree/main/ColorGame",
+        "demo": "https://giux-colorgame.netlify.app/"
     },
     {
         "id": 3,

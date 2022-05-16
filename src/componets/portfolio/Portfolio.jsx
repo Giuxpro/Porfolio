@@ -28,7 +28,7 @@ const Portfolio = () => {
                   Github
                 </a>
                 <a href={demo} className="btn btn-primary" target="_blank">
-                  Live Demo "Soon"
+                  Live Demo
                 </a>
               </div>
             </article>

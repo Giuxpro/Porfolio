@@ -7,16 +7,17 @@ import {ImWhatsapp} from "react-icons/im"
 import  { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-const {PHONE_NUMBER, EMAIL_SERVICE_ID, TEMPLATE_SERVICE_ID, PUBLIC_KEY} = process.env
 
+// const {REACT_APP_PHONE_NUMBER, REACT_APP_EMAIL_SERVICE_ID, REACT_APP_TEMPLATE_SERVICE_ID, REACT_APP_PUBLIC_KEY} = process.env
 
+console.log(process.env.REACT_APP_PHONE_NUMBER)
 const Contact = () => {
   const form = useRef();
   
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_x13b9ju", "template_zdkz01m",  form.current, "M-Qkyci830QPzlOwZ")
+    emailjs.sendForm(`service_x13b9ju`, `template_zdkz01m`,  form.current, `M-Qkyci830QPzlOwZ`)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -55,7 +56,7 @@ const Contact = () => {
             <ImWhatsapp/>
             <h4>WhatsApp</h4>
             <h5>Let's Talk</h5>
-            <a href={`https://api.whatsapp.com/send?phone=922276249`} target="_blank">Send a Message</a>
+            <a href={`https://api.whatsapp.com/send?phone=51922276249`} target="_blank">Send a Message</a>
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
